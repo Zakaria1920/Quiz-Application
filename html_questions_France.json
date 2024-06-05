@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Pourquoi utilisons-nous l'élément <br>",
+    "answer_1": "Pour mettre le texte en gras",
+    "answer_2": "Pour mettre le texte en italique",
+    "answer_3": "Pour ajouter une ligne de rupture",
+    "answer_4": "Pour créer une ligne horizontale",
+    "answer_5": "Pour agrandir le texte",
+    "answer_6": "Pour réduire la taille du texte",
+    "answer_7": "Pour ajouter un point-virgule",
+    "answer_8": "Pour créer une ligne verticale",
+    "right_answer": "Pour ajouter une ligne de rupture"
+  },
+  {
+    "title": "L'élément <img> a-t-il l'attribut href",
+    "answer_1": "Oui",
+    "answer_2": "Non, c'est pour la balise d'ancrage <a>",
+    "answer_3": "Tous les éléments ont cet attribut",
+    "answer_4": "Les réponses 1 et 3 sont correctes",
+    "answer_5": "Non",
+    "answer_6": "Non, c'est pour la balise d'ancrage",
+    "answer_7": "Tous les éléments n'ont pas cet attribut",
+    "answer_8": "Les réponses 2 et 4 sont correctes",
+    "right_answer": "Non, c'est pour la balise d'ancrage <a>"
+  },
+  {
+    "title": "Comment pouvons-nous mettre le texte d'un élément en gras",
+    "answer_1": "En le plaçant dans la balise <b>",
+    "answer_2": "En le plaçant dans la balise <strong>",
+    "answer_3": "Personnalisation avec la propriété font-weight en CSS",
+    "answer_4": "Toutes les réponses sont bonnes",
+    "answer_5": "En le plaçant dans la balise <i>",
+    "answer_6": "En le plaçant dans la balise <bold>",
+    "answer_7": "Personnalisation avec la propriété font-size en CSS",
+    "answer_8": "Toutes les réponses sont fausses",
+    "right_answer": "Toutes les réponses sont bonnes"
+  },
+  {
+    "title": "Quel est l'élément qui n'existe pas dans la sémantique HTML5",
+    "answer_1": "<article>",
+    "answer_2": "<section>",
+    "answer_3": "<blockquote>",
+    "answer_4": "<à part>",
+    "answer_5": "<div>",
+    "answer_6": "<p>",
+    "answer_7": "<q>",
+    "answer_8": "<h2>",
+    "right_answer": "<blockquote>"
+  },
+  {
+    "title": "En HTML, pouvons-nous utiliser cette méthode pour ajouter des attributs",
+    "answer_1": "<div class='class-name'>",
+    "answer_2": "<div class=class-name>",
+    "answer_3": "<div class=\"class-name\">",
+    "answer_4": "Tout va bien",
+    "answer_5": "<div class=''>",
+    "answer_6": "<classe div=>",
+    "answer_7": "<div class=\"\">",
+    "answer_8": "Tout va mal",
+    "right_answer": "Tout va bien"
+  },
+  {
+    "title": "Quelle est la bonne hiérarchie pour créer une partie de page",
+    "answer_1": "<h2> puis <p> puis <h1> puis <p> puis <h3> puis <p> puis <img>",
+    "answer_2": "<h2> puis <p> puis <h1> puis <p> puis <h3> puis <p> puis <img>",
+    "answer_3": "<h2> puis <p> puis <h1> puis <p> puis <h3> puis <p> puis <img>",
+    "answer_4": "Toutes les solutions sont fausses",
+    "answer_5": "<h2> puis <p> puis <h1> puis <p> puis <h3> puis <p> puis <img>",
+    "answer_6": "<h2> puis <p> puis <h1> puis <p> puis <h3> puis <p> puis <img>",
+    "answer_7": "<h2> puis <p> puis <h1> puis <p> puis <h3> puis <p> puis <img>",
+    "answer_8": "Toutes les solutions sont bonnes",
+    "right_answer": "Toutes les solutions sont fausses"
+  }
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="lang">
+      <div>
+        <div class="label">Choose Langeuage:</div>
+        <div class="select">
+          <div class="current">
+            <span>English</span> <i class="show fas fa-chevron-down"></i
+            ><i class="hide fas fa-chevron-up"></i>
+          </div>
+          <div class="options">
+            <div class="option" data-lang="English">English</div>
+            <div class="option" data-lang="Arabic">Arabic</div>
+            <div class="option" data-lang="France">France</div>
+          </div>
+        </div>
+        <div>
+          <div class="start-but button">Start</div>
+          <div class="choose-but button">Choose</div>
+        </div>
+      </div>
+    </div>
+    <div class="quiz-app">
+      <div class="quiz-info">
+        <div class="category">Category: <span>HTML</span></div>
+        <div class="count">Questions Count: <span></span></div>
+      </div>
+      <div class="quiz-area"></div>
+      <div class="answers-area"></div>
+      <button class="submit-button">Submit Answer</button>
+      <div class="bullets">
+        <div class="spans"></div>
+        <div class="countdown"></div>
+      </div>
+      <div class="results"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
