@@ -73,7 +73,7 @@ function getQuestions(language) {
       addData(questions[currentIndex], qCount);
 
       // Start countdown
-      countdown(3, qCount);
+      countdown(6, qCount);
 
       // Click on submit
       submitButton.onclick = () => {
@@ -101,7 +101,7 @@ function getQuestions(language) {
 
         // Start countdown
         clearInterval(countdownIntervel);
-        countdown(3, qCount);
+        countdown(6, qCount);
 
         // Handle bullets class
         handleBullets();
@@ -176,34 +176,29 @@ function addData(obj, count) {
 
 function shuffleAnswers(answers) {
   let shuffledArr = [],
-    count = 1,
-    random,
-    stash;
+    count = 1;
   for (let key in answers) {
     if (key.startsWith("answer")) {
       shuffledArr.push(count++);
     }
   }
-  for (let i = 0; i < shuffledArr.length; i++) {
-    random = Math.floor(Math.random() * shuffledArr.length);
-
-    stash = shuffledArr[i];
-
-    shuffledArr[i] = shuffledArr[random];
-
-    shuffledArr[random] = stash;
+  // Shuffle the keys array using Fisher-Yates algorithm
+  for (let i = shuffledArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArr[i], shuffledArr[j]] = [shuffledArr[j], shuffledArr[i]];
   }
+
   return shuffledArr;
 }
 
 function handleBullets() {
-  let bulletsSpans = document.querySelectorAll(".bullets .spans span");
-  let arrayOfSpans = Array.from(bulletsSpans);
-  arrayOfSpans.forEach((span, index) => {
-    if (currentIndex === index) {
-      span.classList = "on";
+  [...document.querySelectorAll(".bullets .spans span")].forEach(
+    (span, index) => {
+      if (currentIndex === index) {
+        span.classList = "on";
+      }
     }
-  });
+  );
 }
 
 function showResults(count) {
@@ -244,27 +239,3 @@ function countdown(duration, count) {
     }, 1000);
   }
 }
-
-// function shuffleAnswers(answers) {
-//   // Extract the keys that start with "answer"
-//   let keys = [];
-//   for (let key in answers) {
-//     if (key.startsWith("answer")) {
-//       keys.push(key);
-//     }
-//   }
-
-//   // Shuffle the keys array using Fisher-Yates algorithm
-//   for (let i = keys.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [keys[i], keys[j]] = [keys[j], keys[i]];
-//   }
-
-//   // Create a new object with the shuffled keys
-//   let shuffledAnswers = {};
-//   keys.forEach(key => {
-//     shuffledAnswers[key] = answers[key];
-//   });
-
-//   return shuffledAnswers;
-// }
