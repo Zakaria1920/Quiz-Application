@@ -23,6 +23,10 @@ body {
   display: flex;
   align-items: start;
   gap: 20px;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .lang .label {
   margin-top: 5px;
@@ -112,6 +116,10 @@ body {
   width: 800px;
   background-color: #f8f8f8;
   padding: 15px;
+  @media (max-width: 576px) {
+    width: 100%;
+    font-size: 13px;
+  }
 }
 .quiz-app .quiz-info {
   display: flex;
